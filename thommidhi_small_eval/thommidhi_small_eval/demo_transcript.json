@@ -1,0 +1,21 @@
+{
+  "case_id": "C05",
+  "tool_calls": [
+    {
+      "name": "get_creator_brand_terms",
+      "arguments": {
+        "fields": [
+          "negotiation_preferences"
+        ]
+      }
+    },
+    {
+      "name": "draft_brand_reply_from_creator_terms",
+      "arguments": {
+        "creator_goal": "clarify",
+        "tone": "friendly"
+      }
+    }
+  ],
+  "assistant_text": "Here is a friendly draft asking the brand to share its budget. No message was sent."
+}
