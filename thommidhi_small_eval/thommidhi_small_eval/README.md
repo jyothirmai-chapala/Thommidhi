@@ -39,8 +39,3 @@ python eval.py --transcript task1_real_transcript.json --out task1_eval_result.j
 ## Scoring
 For a transcript with a `case_id`, the evaluator compares the actual tool names with that case's expected tools. It reports tool precision, recall, and F1. It also raises limited keyword-based flags for manual review. This is a baseline, not a semantic evaluation: it cannot establish whether a tool call was justified, whether private data was leaked, or whether the final state was correct.
 
-## Suggested next improvements
-1. Add exact assertions for grounded values and status transitions.
-2. Add a human-reviewed rubric for prompt-injection resistance and factual grounding.
-3. Run every case against the assistant and preserve anonymized transcripts.
-4. Track latency and errors separately from tool-selection accuracy.
